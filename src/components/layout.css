@@ -1,6 +1,12 @@
 @import "~github-markdown-css";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --deckgo-highlight-code-padding:20px;
+    --deckgo-highlight-code-background: #3a3a48;
+}
 html,body{
-    font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+    font-family: 'IBM Plex Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
     margin:0;
     padding: 0;
     background: #2e2e48;
@@ -15,11 +21,44 @@ html,body{
 .site-header{
     margin: 0 -40px;
 }
-.site-header h1 img{
-    display: block;
+.site-header h1 a{
     width: 100%;
-    max-height: 300px;
-    object-fit: cover;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-decoration: none;
+}
+.site-header h1 a .container{
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+    padding: 0 40px;
+    margin: auto;
+    color: #fff;
+    position: relative;
+    align-content: start;
+    max-width: 100%;
+    font-size:32pt;
+    line-height: 1em;
+    font-weight: normal;
+    text-shadow: #000 0 0 20px;
+}
+.site-header h1 a strong{
+    font-size: 1.5em;
+    line-height: 1em;
+}
+.site-header h1 .gatsby-image-wrapper{
+    display: block;
+    width:100%;
+    height: 100%;
+    position: absolute;
+}
+.site-header h1 .gatsby-image-wrapper,
+.site-header h1 .gatsby-image-wrapper img{
+    display: flex;
+    flex: 1;
 }
 .site-footer{
     padding: 40px 40px 80px;
@@ -60,7 +99,12 @@ h1.post-title{
     color: #6d70ea;
     background-color: #101022;
 }
-:root{
-    --deckgo-highlight-code-padding:20px;
-    --deckgo-highlight-code-background: #3a3a48;
+
+@media screen and (max-width: 900px){
+    .site-header h1 a{
+        height:120px;
+    }
+    .site-header h1 a .container{
+        font-size:24px;
+    }
 }

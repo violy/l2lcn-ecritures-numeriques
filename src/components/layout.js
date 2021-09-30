@@ -13,6 +13,7 @@ import "./layout.css"
 
 class Layout extends React.Component{
   //
+
   async componentDidMount() {
     try {
       const deckdeckgoHighlightCodeLoader = require("@deckdeckgo/highlight-code/dist/loader")
@@ -28,7 +29,7 @@ class Layout extends React.Component{
 
     return (
       <div className={"site"}>
-        <Header siteTitle={`Écriture Numérique L2 LCN — Université Gustave Eiffel — 2021/2022`} />
+        <Header />
         <div className={"site-main"}>{children}</div>
         <footer className={"site-footer"}>
           {new Date().getFullYear()}, {` `}
