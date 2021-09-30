@@ -2,7 +2,7 @@
 slug: "/html"
 date: "2021-10-01"
 title: "HTML"
-next: "/continue"
+next: "/editeur"
 ---
 
 ## HTML, le language du Web

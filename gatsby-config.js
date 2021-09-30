@@ -49,7 +49,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-highlight-code`,
             options: {
-              terminal: "none",
+              terminal: "carbon",
               theme: "seti",
             },
           },
