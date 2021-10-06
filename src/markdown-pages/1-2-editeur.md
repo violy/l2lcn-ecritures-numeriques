@@ -1,4 +1,5 @@
 ---
+index: 1.2
 slug: "/editeur"
 date: "2021-10-01"
 title: "Éditeur"

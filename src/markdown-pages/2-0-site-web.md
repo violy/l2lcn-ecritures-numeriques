@@ -1,4 +1,5 @@
 ---
+index: 2.0
 slug: "/site-web"
 date: "2021-10-01"
 title: "Site Web"

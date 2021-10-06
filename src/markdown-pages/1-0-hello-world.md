@@ -1,4 +1,5 @@
 ---
+index: 1.0
 slug: "/hello-world"
 date: "2021-10-01"
 title: "Hello World"

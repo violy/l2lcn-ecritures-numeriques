@@ -1,9 +1,9 @@
 ---
+index: 2.1
 slug: "/structure-et-syntaxe"
-date: "2021-10-01"
+date: "2021-10-07"
 title: "Structure et syntaxe du HTML"
-next: "/"
-
+next: "/html-atom"
 ---
 
 ## Les espaces, tabulations et retours à la ligne
@@ -13,7 +13,7 @@ Une chose importante, déjà : **Les espaces**.
 le HTML est insensible au *espaces multiples, tabulations et retours à la ligne*. 
 Ainsi, le texte HTML suivant :
 
-```
+```html
 		Longtemps,
 	je  me        suis
 
@@ -23,7 +23,7 @@ de        bonne         heure.
 
 s’affichera de cette manière dans le navigateur
 
-```
+```html
 Longtemps, je me suis couché de bonne heure.
 ```
 
@@ -33,15 +33,15 @@ Aussi, pour assurer des **retours à la ligne**, on utilisera la balise orphelin
 
 Enfin pour forcer une espace, on utilisera le **code html** ` &nbsp;` (**n**o **b**reak **sp**ace) de **l'espace insécable**. 
 
-Attention à ne pas trop abusé de ces techniques d'espacement par `<br/>` ou  ` &nbsp;` — il faudra apprendre le CSS pour appliquer des marges, et donner des dimensions aux blocs. 
+Attention à ne pas trop abuser de ces techniques d'espacement par `<br/>` ou  ` &nbsp;` — il faudra apprendre le CSS pour appliquer des marges, et donner des dimensions aux **blocs**. 
 
 ## Les balises (tags)
 
-En HTML, pour décrire le contenu, on utilise des **balises** (tags).
+En HTML, pour décrire le contenu, on utilise des **balises** (*tags* en anglais).
 
 Chacune de ces balises ont un rôle particulier, qu’il faudra respecter.
 
-Une balise HTML commence par un `<` et se termine par un autre `>`. 
+Une balise HTML commence par le caractère `<` et se termine par un autre caractère, le `>`. 
 
 ## Les deux types de balises
 
@@ -51,7 +51,7 @@ Les **balises paires** englobe du texte et peuvent contenir d’autres balises.
 
 On écrit une balise ouvrante `<balise>` et une balise fermante `</balise>`
 
-```
+```html
 <p>
 	un exemple de paragraphe de texte
 </p>
@@ -59,7 +59,7 @@ On écrit une balise ouvrante `<balise>` et une balise fermante `</balise>`
 
 Les **balises orphelines** servent à insérer un élément à un endroit précis, comme une image ou un retour à la ligne `<balise />`.
 
-```
+```html
 <br /> ceci est un retour à la ligne
 ```
 
@@ -165,7 +165,17 @@ Cette balise est spéciale, elle intervient toujours en début de document, elle
 
 ### `<html></html>`
 
-C’est la balise racine (parente de toutes) les autres. elle contiendra toujours et seulement deux autres, `<head></head>` (l’entête de document) et `<body></body>` (le corps de document)
+C’est la balise racine (parente de toutes) les autres. elle contiendra toujours et seulement deux autres, `<head></head>` (l’entête de document) et `<body></body>` (le corps de document).
+
+Il est important de lui préciser l'attribut `lang` avec le [code ISO de la langue](https://fr.wikipedia.org/wiki/Liste_des_codes_ISO_639-1) utilisé sur le document, par exemple `fr`  pour le français et `en` pour l'anglais.
+
+```html
+<!doctype HTML>
+<html lang="fr">
+  <head><!-- en-tête, méta-données --></head>
+	<body><!-- corps du document --></body>
+</html>
+```
 
 ### `<head></head>`
 
@@ -191,4 +201,4 @@ C’est la balise de corps, qui concerne donc la partie principale — visible �
 </html>
 ```
 
-Dans cet exemple, on voit apparaitre une balise non décrite précédement. On peut la concidérer comme obligatoire, et elle concerne le **jeu de caractères** (*charset* en anglais). Nous utiliserons toujours le jeu de caractère `utf-8`, le plus universel.
+Dans cet exemple, on voit apparaitre des balises que l'on va décrouvrir au chapitre suivant. Ces balises sont obligatoires, car elle concerne le **jeu de caractères** (*charset* en anglais). Nous utiliserons toujours le jeu de caractère `utf-8`, le plus universel.
