@@ -25,7 +25,6 @@ const Header = () => {
     }
   `)
   const image = getImage(data.headerImage)
-  console.log(data.headerImage);
 
   return (
   <header className={"site-header"}>

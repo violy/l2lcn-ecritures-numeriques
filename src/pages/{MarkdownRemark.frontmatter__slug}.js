@@ -7,7 +7,7 @@ moment.locale('fr');
 
 export default function Template({ data, }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
+  const { frontmatter, html='',tableOfContents ='' } = markdownRemark
   const { title = '', date = false, next = false} = frontmatter
   return (
     <Layout>
@@ -15,6 +15,10 @@ export default function Template({ data, }) {
         <header className={"post-header"}>
           <h1 className={"post-title"}>{title}</h1>
           <div className={"post-date"}>vu le {date && moment(date).format('LL')}</div>
+          <nav>
+            <h4>Sommaire</h4>
+            <div dangerouslySetInnerHTML={{ __html: tableOfContents}} />
+          </nav>
         </header>
         <main
           className="markdown-body"
@@ -35,6 +39,7 @@ export const pageQuery = graphql`
         title
         next
       }
+      tableOfContents
     }
   }
 `

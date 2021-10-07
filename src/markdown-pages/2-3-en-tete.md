@@ -3,7 +3,7 @@ index: 2.3
 slug: "/en-tete"
 date: "2021-10-07"
 title: "Entête du document HTML"
-next: "/en-tete"
+next: "/texte-riche"
 ---
 
 Comme vu au chapitre précédent, c’est la balise d’en-tête, qui contient les informations générales sur la page comme le titre, l’encodage, les meta. On y déclarera aussi des liaisons vers les feuilles de style CSS et les script JavaScript.
