@@ -6,6 +6,20 @@ title: "Texte riche"
 next: "/texte-riche"
 ---
 
+## Balise Hyperlien
+
+C’est la balise la plus simple et la plus importante de toute : la balise `a`. L’hypertexte est la base même de l'interaction sur le web. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hUHsmnWmI3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Elle tient son nom de l'anglais **anchor** — l'ancre **⚓︎** ; encore un symbole de marine.
+
+```html
+Prenons la direction <a href="lilliput.html">L’île de lilliput</a>
+```
+
+
+
 ## Web historique et Web sémantique
 
 Le HTML a existé avant le CSS, et a tout un ensemble de balise dédié à la mise en forme du texte. Avec le temps, il s'est normalisé et les balises historiques ont évoluées vers ce que l'on appelle le Web sémantique : la balise a un sens et non une forme.
