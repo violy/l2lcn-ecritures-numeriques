@@ -101,6 +101,19 @@ Certains attributs n'ont pas de valeur, par exemple pour cette case cochée :
 <input type="checkbox" checked />
 ```
 
+```html
+<input type="radio" name="choix" />
+<input type="radio" name="choix" />
+
+<input type="checkbox" name="case" />
+<input type="text" name="texte" placeholder="🤷" value="👋" />
+```
+
+<input type="radio" name="choix" />
+<br/><input type="radio" name="choix" />
+<br/><input type="checkbox" name="case" />
+<br/><input type="text" name="texte" placeholder="🤷" value="👋" />
+
 ## Le commentaire
 
 Comme dans beaucoup de langage informatique, le HTML permet d’inclure des commentaires dans le code, qui seront invisible à l’interprétation. Ces commentaires permettent d’insérer de remarques cachées, ou d’isoler du code HTML temporairement sans le supprimer. la notation du commentaire est aussi une paire ovrante `<!--` et fermante `-->`. Tous le texte situé entre ces deux balise sera ignorée.

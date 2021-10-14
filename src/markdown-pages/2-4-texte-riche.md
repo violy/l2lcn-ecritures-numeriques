@@ -3,7 +3,7 @@ index: 2.4
 slug: "/texte-riche"
 date: "2021-10-07"
 title: "Texte riche"
-next: "/texte-riche"
+next: "/css"
 ---
 
 ## Balise Hyperlien
