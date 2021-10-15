@@ -1,6 +1,6 @@
 ---
 index: 3.2
-slug: "/selecteurs-css"
+slug: "/proprietes-textes"
 date: "2021-10-15"
 title: "Mettre en forme le texte"
 next: "/"
