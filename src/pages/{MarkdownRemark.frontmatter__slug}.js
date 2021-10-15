@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
+import Helmet from "react-helmet"
 import moment from "moment"
 import "moment/locale/fr"
 moment.locale('fr');
@@ -11,6 +12,7 @@ export default function Template({ data, }) {
   const { title = '', date = false, next = false} = frontmatter
   return (
     <Layout>
+      <Helmet title={`${title} | Écritures numériques | Arthur Violy | Université Gustave Eiffel - L2 LCN`} defer={false} />
       <article className="post markdown-body">
         <header className={"post-header"}>
           <h1 className={"post-title"}>{title}</h1>
