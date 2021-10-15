@@ -105,10 +105,9 @@ On observe que contrairement à **l’attribut** `id` qui est unique, plusieurs 
 
 ### Sélecteur d'attribut
 
-Plus occasionnel, ce sélecteur permet de cibler une balise par ces attributs, nom et/ou valeur. 
+Plus occasionnel, le **sélecteur d'attribut** permet de cibler une balise par ces attributs, nom et/ou valeur. 
 
 ```css
-
 input{
   /* tous les champs input */
   margin: 20px;
@@ -128,13 +127,14 @@ input{
 
 ```html
 <div>
-<input name="ok" type="checkbox" />
-Je vous apprends, me dit-il, 
-qu’on a convoqué depuis peu 
-plusieurs comités secrets à votre sujet…
+  <input name="ok" type="checkbox" />
+  Je vous apprends, me dit-il, 
+  qu’on a convoqué depuis peu 
+  plusieurs comités secrets à votre sujet…
 
-<input name="le-sujet" type="text" />
-</div> ```
+  <input name="le-sujet" type="text" />
+</div> 
+```
 
 ### Et d’autres (pseudo-)sélecteurs…
 
