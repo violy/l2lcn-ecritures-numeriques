@@ -7,7 +7,7 @@ import "../components/index.css"
 
 const IndexPage = ({data}) => (
   <Layout>
-    <Seo title="Home" />
+    <Seo title="Sommaire" />
     <h1>Accueil</h1>
     <ul className={"index-tree"}>
       {data.pages.nodes.map((mdPage,key)=>
