@@ -69,7 +69,7 @@ Les trois selecteurs permettent ici de sélectionner les trois balises, qui ont 
 
 ![123](images/blocs-123.png)
 
-## Les sélecteurs par classe : `.`
+### Les sélecteurs par classe : `.`
 
 Voici donc le sélecteur intermédiaire entre celui d’*élement* (trop global) et celui d’*identifiant* : le sélecteur de **classe**. Il sera souvent le plus recommandé, car il a une *priorité moyenne* dans les priorités css (nous y reviendrons).
 
@@ -103,7 +103,40 @@ Et voici le résultat :
 
 On observe que contrairement à **l’attribut** `id` qui est unique, plusieurs **classes** peuvent être utilisées. On utilise **l’attribut** `class`, et si on veut utiliser plusieurs classes, on les **sépare par des espaces**.
 
-## Et d’autres (pseudo-)sélecteurs…
+### Sélecteur d'attribut
+
+Plus occasionnel, ce sélecteur permet de cibler une balise par ces attributs, nom et/ou valeur. 
+
+```css
+
+input{
+  /* tous les champs input */
+  margin: 20px;
+
+}
+
+[type="checkbox"]{
+  /* le champ de checkbox */
+  background: #ffffbb;
+}
+
+[type="text"]{
+  /* le champ texte */
+  background: #ff66ff;
+}
+```
+
+```html
+<div>
+<input name="ok" type="checkbox" />
+Je vous apprends, me dit-il, 
+qu’on a convoqué depuis peu 
+plusieurs comités secrets à votre sujet…
+
+<input name="le-sujet" type="text" />
+</div> ```
+
+### Et d’autres (pseudo-)sélecteurs…
 
 Il existe d’autres types de sélecteurs, que l’on nomme **pseudo-sélecteur**. Certains permettent de décrire des positions dans la hiérarchie HTML, d’autres des états d‘interaction de la balise — comme le survol.
 
