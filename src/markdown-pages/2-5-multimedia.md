@@ -161,7 +161,7 @@ Pour insérer du son, de l'audio, on utilise la balise éponyme `<audio>` et l'a
     <figcaption>Part 1, Chapter 4 of Gulliver's Travels read aloud</figcaption>
     <audio
         controls
-        src="https://upload.wikimedia.org/wikipedia/commons/c/c2/LibriVox_-_Gulliver%27s_Travels_1-01.ogg" />
+        src="https://upload.wikimedia.org/wikipedia/commons/c/c2/LibriVox_-_Gulliver%27s_Travels_1-01.ogg">
             Votre navigateur ne supporte pas la balise
             <code>audio</code>.
     </audio>
@@ -197,7 +197,7 @@ Pour insérer de la vidéo, on utilise la balise éponyme `<video>` et l'attribu
     <figcaption>Le Voyage de Gulliver à Lilliput et chez les géants</figcaption>
     <video
         controls
-       src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Le_Voyage_de_Gulliver_%281902%29.webm" />
+       src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Le_Voyage_de_Gulliver_%281902%29.webm">
             Votre navigateur ne supporte pas la balise
             <code>video</code>.
     </video>
