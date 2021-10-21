@@ -1,7 +1,7 @@
 ---
 index: 2.2
 slug: "/html-atom"
-date: "2021-10-07"
+date: "2021-10-08"
 title: "Saisie du code dans Atom"
 next: "/en-tete"
 

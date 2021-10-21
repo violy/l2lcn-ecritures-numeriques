@@ -1,7 +1,7 @@
 ---
 index: 2.1
 slug: "/structure-et-syntaxe"
-date: "2021-10-07"
+date: "2021-10-08"
 title: "Structure et syntaxe du HTML"
 next: "/html-atom"
 ---

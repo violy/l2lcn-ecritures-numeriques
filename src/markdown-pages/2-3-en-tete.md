@@ -1,7 +1,7 @@
 ---
 index: 2.3
 slug: "/en-tete"
-date: "2021-10-07"
+date: "2021-10-08"
 title: "Entête du document HTML"
 next: "/texte-riche"
 ---

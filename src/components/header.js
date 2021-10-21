@@ -2,7 +2,6 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import headerImg from "../images/header-h.jpg"
 
 const Header = () => {
   const data = useStaticQuery(graphql`

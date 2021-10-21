@@ -33,7 +33,7 @@ Le `html` est devenu un **format** universel pour mettre en page des documents, 
 
 Le mot HTML est l’acronyme de **HyperText Markup Language**. Le HTML est ainsi un langage formée `balises` (markup en anglais) et on peut très simplement créer un fichier .html avec un **éditeur texte** comme `notpad` ou `textedit`
 
-Pour notre cours, nous utiliserons le logiciel [Brackets](http://brackets.io/), plus approprié au *dévellopement* Web.
+Pour notre cours, nous utiliserons le logiciel [Atom](https://atom.io/), édité par Github, plus approprié au *dévellopement* Web.
 
 ## Code source
 
