@@ -32,8 +32,13 @@ class Layout extends React.Component{
         <Header />
         <div className={"site-main"}>{children}</div>
         <footer className={"site-footer"}>
-          {new Date().getFullYear()}, {` `}
-          <a href="https://violy.net">Arthur Violy</a> - Université Gustave Eiffel - L2 LCN — Écritures numériques
+          <div>
+            {new Date().getFullYear()}, {` `}
+            <a href="https://violy.net" target={"_blank"} rel={"noreferrer nofollow"}>Arthur Violy</a> - Université Gustave Eiffel - L2 LCN — Écritures numériques
+          </div>
+          <div>
+            <a href="https://github.com/violy/l2lcn-ecritures-numeriques/" target={"_blank"} rel={"noreferrer nofollow"}>Source on Github</a>
+          </div>
         </footer>
       </div>
     )
