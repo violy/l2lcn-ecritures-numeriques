@@ -1,9 +1,9 @@
 ---
-index: 2.4
+index: 2.5
 slug: "/multimedia"
 date: "2021-10-22"
 title: "Multimédia, images, son et vidéo"
-next: "/"
+next: "/unites-de-mesure"
 ---
 
 ## Images

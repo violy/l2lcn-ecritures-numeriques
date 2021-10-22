@@ -4,7 +4,6 @@ slug: "/proprietes-textes"
 date: "2021-10-15"
 title: "Mettre en forme le texte"
 next: "/multimedia"
-
 ---
 
 Le web est par nature — on l’a vu — **textuel, hypertextuel**. Il est donc naturel de se pencher sur la mise en place des styles sur le texte.
