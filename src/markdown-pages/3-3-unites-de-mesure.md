@@ -1,7 +1,7 @@
 ---
 index: 3.3
 slug: "/unites-de-mesure"
-date: "2021-10-22"
+date: "2021-11-12"
 title: "Unités de mesure"
 next: "/"
 ---
@@ -141,7 +141,7 @@ font-size:1.2em;
 </div>
 ```
 
-![default font size](http://esad-orleans.github.io/3dvg-web/images/em-cascade.png)
+![default font size](images/em-cascade.png)
 
 Pour plus d’information vous pouvez lire [cet excellent article sur l’unité em](http://www.alsacreations.com/article/lire/563-gerer-la-taille-du-texte-avec-les-em.html)
 

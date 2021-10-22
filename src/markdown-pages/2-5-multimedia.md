@@ -124,12 +124,13 @@ On peut affecter la manière dont l'image occupe le bloc en CSS
   background-repeat: no-repeat; /* repeat, repeat-x, repeat-y */
   background-size: cover; /* contain, 100%, … */
   background-color: red; /* couleur affichée sous l'image */
+  background-attachment: fixed; 
 }
 ```
 
 ### Image *matricielle* vs. image *vectorielle*
 
-![img](/Users/arthurvioly/Documents/projets/Gustave Eiffel/2021-2022 - L2 LCN/support/src/markdown-pages/images/bitmap-vector.png)
+![img](images/bitmap-vector.png)
 
 ![img](https://upload.wikimedia.org/wikipedia/commons/1/16/DigitalPicture.jpg)
 
@@ -228,3 +229,27 @@ La balise possède plusieurs attributs permettant de controller l'affichage et l
 - **`muted`** pour mettre le son de la vidéo en muet
 - **`playinline`** Un attribut booléen qui indique que la vidéo doit être jouée en incise, c'est-à-dire au sein de la zone de lecture de l'élément
 - **`poster`** Une URL qui contient une vignette à afficher tant que la vidéo est en cours de téléchargement. Si cet attribut n'est pas utilisé, rien n'est affiché jusqu'à ce que la première image de la vidéo soit disponible, ensuite, c'est cette image qui est affichée comme vignette sur la vidéo
+
+### Embarquer une vidéo depuis un site externe
+
+De nombreux services — YouTube pour ne pas nommer le plus connu — permette d'héberger des vidéos et de les partager. Pour cela, ils proposent généralement une solution de partage ***embarquée*** (*embed* en anglais)
+
+![youtube](images/youtube-embed.png)
+
+Cela vous donne accès à un bout de code HTML que vous pouvez **intégrer** à votre page Web. Cela utilise généralement une balise `<iframe>` qui permet d'**encapsuler une page web dans une autre** — ici, la page de Youtube. 
+
+```html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/k0gvAyCubGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+```
+
+La plupart des grands fournisseurs de contenu permettent ce genre de partage : 
+
+- Vimeo (vidéo)
+- Dailymotion (vidéo)
+- Peertube (vidéo)
+- Spotify (audio)
+- Soundcloud (audio)
+- Deezer (audio)
+- …
+
+Une balise `<iframe>` peut être dimensionné avec les attributs `width` et `height` mais peut évidement être dimensionné plus finement en CSS. 

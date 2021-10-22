@@ -39,7 +39,7 @@ Pour notre cours, nous utiliserons le logiciel [Atom](https://atom.io/), édité
 
 Le code source `HTML` et `CSS` est interprété par le navigateur.
 
-![image](http://esad-orleans.github.io/3dvg-web/images/html.source.png)
+![image](images/html.source.png)
 
 Toutes les pages web marche sur ce principe !
 
