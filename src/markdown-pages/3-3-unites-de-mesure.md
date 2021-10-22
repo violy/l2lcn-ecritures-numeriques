@@ -124,6 +124,9 @@ L’unité `em` est relative. Dans un document où les balises sont en cascade, 
 .taille-en-em{
 	font-size:1.2em;
 }
+```
+
+```html
 <div class="taille-en-em">
 font-size:1.2em;
 	<div class="taille-en-em">
@@ -147,7 +150,7 @@ Pour plus d’information vous pouvez lire [cet excellent article sur l’unité
 
 ## Recommandation d’usage par unité.
 
-|            |        Recommandé         | Usage occasionnel use |   Non recommandé   |
+|            |        Recommandé         |   Usage occasionnel   |   Non recommandé   |
 | :--------: | :-----------------------: | :-------------------: | :----------------: |
 |   Écran    |         em, px, %         |          ex           | pt, cm, mm, in, pc |
 | Imprimante | em, cm, mm, in, pt, pc, % |        px, ex         |                    |
