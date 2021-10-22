@@ -64,6 +64,9 @@
 </li>
 <li>
 <p><a href="#ins%C3%A9rer-de-la-vid%C3%A9o">Insérer de la vidéo</a></p>
+<ul>
+<li><a href="#embarquer-une-vid%C3%A9o-depuis-un-site-externe">Embarquer une vidéo depuis un site externe</a></li>
+</ul>
 </li>
 </ul></div></nav></header><main class="markdown-body"><h2 id="images" style="position:relative;"><a href="#images" aria-label="images permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Images</h2>
 <p>Il y a 2 manières de considérer les images dans une page web.</p>
@@ -186,10 +189,38 @@ Dans ce cas là, on gèrera l'image via CSS.</li>
   background-repeat: no-repeat; /* repeat, repeat-x, repeat-y */
   background-size: cover; /* contain, 100%, … */
   background-color: red; /* couleur affichée sous l&#39;image */
+  background-attachment: fixed; 
 }</code>
         </deckgo-highlight-code>
 <h3 id="image-matricielle-vs-image-vectorielle" style="position:relative;"><a href="#image-matricielle-vs-image-vectorielle" aria-label="image matricielle vs image vectorielle permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Image <em>matricielle</em> vs. image <em>vectorielle</em></h3>
-<p>![img](/Users/arthurvioly/Documents/projets/Gustave Eiffel/2021-2022 - L2 LCN/support/src/markdown-pages/images/bitmap-vector.png)</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 265px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/l2lcn-ecritures-numeriques/static/a8faaaa67b0df7a6bf5a9fdc7d1d4a86/78e79/bitmap-vector.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 94.71698113207547%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAADfUlEQVQ4y22UW28bRRiG/R8QSCgUBIVWAhVSqUi5QAYEpTS4GFqpUtIG1KZFnIS4QULiBtSLtkQFhNobEFQq5RD1cIHSpiEltmOHeF3HbWOc5kicQoK99q7XG5/Xuw/y2ruxE0aa1cw3z76ame+dzwFgGIbZa62ixihno6yPr811c6ytzlDKRDZwDmtigcrcaVLCJy1ga6+aa+ri9yTHPtzAOSxlS9BsVVpizTto4bR1HAaO5kBVjaHG3qWweBItG9sgYHOr0yaXXzhGRZ5YWzOsI9ciehk1vJMVr5P4by+SmehCr6itRzInOquRTpZHOli4thtZ2EO18K8t6qh9TLCUQBnfxp9XDuO/+DEZYS+aONkAq7agoWVRhXaiAwcZOvcRkuCmsuK3OUdzQorxPuLDTpYvd1C5cADy+brIusQVl74iPvwMS5c7KP3swlDEBlfbYZMdzLEsQPQHkBM2VL/wOofNBSF6FkP8q76u17mWpNRIo1KkuVmXTdMO0TX0stLKYdumkbnk72TCbsTAU2QnP6AYP09VmrRFbUMnh1Am9iEG2lFuHaGweBYtFWq1TTU5SHqkjeToZmThaaTAVpLe+xE9W6mseNfsKV4h7dlEYvQR5OAOpLEnSPoeQPRsoRS/1DiyXiEvOEmMPowSeoGl64eZGXof6Y+XkCIuMjd6MUoF0+350LMkfA+ihJ5n/loPt399j7R/F3LEhRzcj67exUF+lqyvjdT4dkTfK8yNf01osI/YhQPk7rxNKuRGE6NQXkb1byY1vo2VkV1M+78kOHiKG+e7KEy/Qyq0h/I/QzgozJPxPUQ6+CSLgy5ivuP0n+gm/GMX+elexLAbLe4HTUTxP4YUfJz5q53c9pzgl5PdDJ9xU5x9CzH8KuXZfhym88O7EUc3kfB3cqlvPwN9O5Ejb5KaO8TqNzsw4lPm/dS5NhKBl7n4+T76P3uORPAg0sIR1O/a0ac89aRo6RFSgXakW6+TjPSQmelFnuwif/xejNO9WAVMk7ykxrYj3XyNRLgHaeoQSrSb3Bdt6Kdc1ktp2EEWyN48StbjJHfuUbRP74Nvj2JUtboN9XoJqkg+lMgbZL1Ocj9toXzsHvQzezHUxP8Yu5yDv/1w5yokZ+tCjYLQUqaKIsbSdZgawLgr2Cewn55dAKwnZgnp1bWKbbRWbOs5Nn624/8BaeRI85AbCwMAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/l2lcn-ecritures-numeriques/static/a8faaaa67b0df7a6bf5a9fdc7d1d4a86/78e79/bitmap-vector.png"
+        srcset="/l2lcn-ecritures-numeriques/static/a8faaaa67b0df7a6bf5a9fdc7d1d4a86/78e79/bitmap-vector.png 265w"
+        sizes="(max-width: 265px) 100vw, 265px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/1/16/DigitalPicture.jpg" alt="img"></p>
 <p>Une image <strong>vectorielle</strong> est redimensionnable sans perte de qualité, contrairement à une image <strong>matricielle</strong>. On parle également d'image <em>bitmap</em> ou pixelisée pour parler des images matricielles.</p>
 <p>Pour éditer une image vectorielle, on peut utiliser Adobe Illustrator ou Inkscape (libre).
@@ -271,4 +302,51 @@ Les codecs mp4, ogv et webm sont les plus supportés.</p>
 <li><strong><code>muted</code></strong> pour mettre le son de la vidéo en muet</li>
 <li><strong><code>playinline</code></strong> Un attribut booléen qui indique que la vidéo doit être jouée en incise, c'est-à-dire au sein de la zone de lecture de l'élément</li>
 <li><strong><code>poster</code></strong> Une URL qui contient une vignette à afficher tant que la vidéo est en cours de téléchargement. Si cet attribut n'est pas utilisé, rien n'est affiché jusqu'à ce que la première image de la vidéo soit disponible, ensuite, c'est cette image qui est affichée comme vignette sur la vidéo</li>
-</ul></main></article><a class="post-next" href="/l2lcn-ecritures-numeriques/unites-de-mesure">page suivante <code>/unites-de-mesure</code></a></div><footer class="site-footer"><div>2021<!-- -->, <!-- --> <a href="https://violy.net" target="_blank" rel="noreferrer nofollow">Arthur Violy</a> - Université Gustave Eiffel - L2 LCN — Écritures numériques</div><div><a href="https://github.com/violy/l2lcn-ecritures-numeriques/" target="_blank" rel="noreferrer nofollow">Source on Github</a></div></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/multimedia/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-3b3ceb88b678676e6e0d.js"],"app":["/app-f19f0896778181451809.js"],"component---src-pages-404-js":["/component---src-pages-404-js-8aca18c015425c035e34.js"],"component---src-pages-index-js":["/component---src-pages-index-js-d36d18587b227748b87d.js"],"component---src-pages-markdown-remark-frontmatter-slug-js":["/component---src-pages-markdown-remark-frontmatter-slug-js-c57f4a93c34c24508bc4.js"],"polyfills-dom":["/polyfills-dom-6f8745abb9f1e56c3320.js"],"polyfills-core-js":["/polyfills-core-js-f3b2f8a6b080c8505e04.js"]};/*]]>*/</script><script src="/l2lcn-ecritures-numeriques/polyfill-3b3ceb88b678676e6e0d.js" nomodule=""></script><script src="/l2lcn-ecritures-numeriques/component---src-pages-markdown-remark-frontmatter-slug-js-c57f4a93c34c24508bc4.js" async=""></script><script src="/l2lcn-ecritures-numeriques/commons-8f6349ada932b0bbd8aa.js" async=""></script><script src="/l2lcn-ecritures-numeriques/app-f19f0896778181451809.js" async=""></script><script src="/l2lcn-ecritures-numeriques/framework-4f5ab9510ddfb22fa2f1.js" async=""></script><script src="/l2lcn-ecritures-numeriques/webpack-runtime-9a2bdafd4e2b34dac75b.js" async=""></script></body></html>
+</ul>
+<h3 id="embarquer-une-vidéo-depuis-un-site-externe" style="position:relative;"><a href="#embarquer-une-vid%C3%A9o-depuis-un-site-externe" aria-label="embarquer une vidéo depuis un site externe permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Embarquer une vidéo depuis un site externe</h3>
+<p>De nombreux services — YouTube pour ne pas nommer le plus connu — permette d'héberger des vidéos et de les partager. Pour cela, ils proposent généralement une solution de partage <em><strong>embarquée</strong></em> (<em>embed</em> en anglais)</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 634px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/l2lcn-ecritures-numeriques/static/bda3f67a5a8307fdc7c2681a15d172dd/374ac/youtube-embed.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 64%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC5ElEQVQ4y52TbWhTZxTHH7XYKWlvq1a7JrEtJtW0qZYJipQxQWQyZH7bp/nFLwWh1FdKfcPXmtQVZGJJUlvQiEPqBxkic1+GW8FirQh2CooK0tekN7m55ia59/bmJ7m1bmOf9MCf5xzOw49zznMesaSkhHU+PxWlEkIIhHAghESpELaqiwV15QupK1uAf5lgXamgodKBz7OCSkmwokRQWSZYJn1BxfIyhFiwiB07v+dC8DDt7T/S2rqb1rZ9HD3YxtG2Vk61HyBwop3zxw7TdfwQwWP76TrZQSDYSefZDgLnj3PmTAdrN3ipXuMuFCX45WYAUIjFxoAZIMunWM4wWb/ta1x1tYiKVYLwlUt2Qp6R0Q24I//KaHqI1wmIPtdIZU1+u/+Mkb/HSSZmGBl5TC6nMf32Ksn4X6Q1A2/zV5S6VyKkMkFX9xwwGZMZy8bZ+uIIwVgnoaez7LqX49aowg97r7IvcI/h4SGuRQeYGn/AxdOC2zf32EVs3LQRl9OJ+LJKcKH7ZxsYj8cwjVnuTgzyXPmD8RTceJpAMyx+/3OUJ8/GUFWFhw+Hyek68fEB1MQgipKhtraGoqIiRHNzNbcGQjYwldKwrMIIX5E3lLkBGRrkLUwjy6ypk8/nMQwDy7LIZPLoOmhaGpfLNbclHo+H69fPAdMkEy+R5UdMTY8yMTnN5NQkE5NTZLNZDMNE1w10XbeBWjbH23gaJa2TfveOxsZGJEmaA4ZCVwALVX2Dqs6QSKjIskwymURRFBvwUaaJaRo2PKHmyORM0lqaLd/uRFrdgPD5fEQiYbu7TMa0KzFN025pXv8B/ktmYQTWLEoqxTc7tlPu8iD8fj/RaPTDRuX5XPtucwM15UsR9fX1tLS00N/fTzgcpre3l0gkYvsFhUKhj/583NfXR09PD8FAgMuXe+ju/glvjRtn5UpEU1MTXq+XqqoqnE6n/Vrzp9vt/p8KucJ9h8Px4e//o8XFxbwHdejtv0tuP68AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="youtube"
+        title="youtube"
+        src="/l2lcn-ecritures-numeriques/static/bda3f67a5a8307fdc7c2681a15d172dd/374ac/youtube-embed.png"
+        srcset="/l2lcn-ecritures-numeriques/static/bda3f67a5a8307fdc7c2681a15d172dd/5a46d/youtube-embed.png 300w,
+/l2lcn-ecritures-numeriques/static/bda3f67a5a8307fdc7c2681a15d172dd/0a47e/youtube-embed.png 600w,
+/l2lcn-ecritures-numeriques/static/bda3f67a5a8307fdc7c2681a15d172dd/374ac/youtube-embed.png 634w"
+        sizes="(max-width: 634px) 100vw, 634px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>Cela vous donne accès à un bout de code HTML que vous pouvez <strong>intégrer</strong> à votre page Web. Cela utilise généralement une balise <code>&#x3C;iframe></code> qui permet d'<strong>encapsuler une page web dans une autre</strong> — ici, la page de Youtube.</p>
+<deckgo-highlight-code language="html" terminal="carbon" theme="seti"  >
+          <code slot="code">&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/k0gvAyCubGQ&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</code>
+        </deckgo-highlight-code>
+<p>La plupart des grands fournisseurs de contenu permettent ce genre de partage :</p>
+<ul>
+<li>Vimeo (vidéo)</li>
+<li>Dailymotion (vidéo)</li>
+<li>Peertube (vidéo)</li>
+<li>Spotify (audio)</li>
+<li>Soundcloud (audio)</li>
+<li>Deezer (audio)</li>
+<li>…</li>
+</ul>
+<p>Une balise <code>&#x3C;iframe></code> peut être dimensionné avec les attributs <code>width</code> et <code>height</code> mais peut évidement être dimensionné plus finement en CSS.</p></main></article><a class="post-next" href="/l2lcn-ecritures-numeriques/unites-de-mesure">page suivante <code>/unites-de-mesure</code></a></div><footer class="site-footer"><div>2021<!-- -->, <!-- --> <a href="https://violy.net" target="_blank" rel="noreferrer nofollow">Arthur Violy</a> - Université Gustave Eiffel - L2 LCN — Écritures numériques</div><div><a href="https://github.com/violy/l2lcn-ecritures-numeriques/" target="_blank" rel="noreferrer nofollow">Source on Github</a></div></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/multimedia/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-3b3ceb88b678676e6e0d.js"],"app":["/app-f19f0896778181451809.js"],"component---src-pages-404-js":["/component---src-pages-404-js-8aca18c015425c035e34.js"],"component---src-pages-index-js":["/component---src-pages-index-js-d36d18587b227748b87d.js"],"component---src-pages-markdown-remark-frontmatter-slug-js":["/component---src-pages-markdown-remark-frontmatter-slug-js-c57f4a93c34c24508bc4.js"],"polyfills-dom":["/polyfills-dom-6f8745abb9f1e56c3320.js"],"polyfills-core-js":["/polyfills-core-js-f3b2f8a6b080c8505e04.js"]};/*]]>*/</script><script src="/l2lcn-ecritures-numeriques/polyfill-3b3ceb88b678676e6e0d.js" nomodule=""></script><script src="/l2lcn-ecritures-numeriques/component---src-pages-markdown-remark-frontmatter-slug-js-c57f4a93c34c24508bc4.js" async=""></script><script src="/l2lcn-ecritures-numeriques/commons-8f6349ada932b0bbd8aa.js" async=""></script><script src="/l2lcn-ecritures-numeriques/app-f19f0896778181451809.js" async=""></script><script src="/l2lcn-ecritures-numeriques/framework-4f5ab9510ddfb22fa2f1.js" async=""></script><script src="/l2lcn-ecritures-numeriques/webpack-runtime-9a2bdafd4e2b34dac75b.js" async=""></script></body></html>
