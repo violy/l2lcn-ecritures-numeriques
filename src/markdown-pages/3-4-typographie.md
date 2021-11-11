@@ -1,5 +1,5 @@
 ---
-index: 3.3
+index: 3.4
 slug: "/typographie"
 date: "2021-11-12"
 title: "Typographie"
@@ -73,7 +73,7 @@ Google permet de charger ses polices via des CDN — c'est à dire que le fichie
 
 Google indique 2 méthodes et vous donne des copier-coller à faire. 
 
-Voici des exemples pour la police Roboto Regular `400` et Bold `700`. 
+Voici des exemples pour la police `Roboto` Regular `400` et Bold `700`. 
 
 #### méthode `<link>`
 
@@ -92,6 +92,14 @@ Avec du CSS
 ```css
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 ```
+
+Puis, toujours en CSS, la propriété `font-family` avec la police nommée *Roboto*. 
+
+```css
+font-family: 'Roboto', sans-serif;
+```
+
+
 
 
 
