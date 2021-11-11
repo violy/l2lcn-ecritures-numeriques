@@ -3,7 +3,7 @@ index: 3.3
 slug: "/unites-de-mesure"
 date: "2021-11-12"
 title: "Unités de mesure"
-next: "/"
+next: "/typographie"
 ---
 
 # Unités de mesure
