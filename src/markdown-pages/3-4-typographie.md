@@ -3,7 +3,7 @@ index: 3.4
 slug: "/typographie"
 date: "2021-11-12"
 title: "Typographie"
-next: "/"
+next: "/box-model"
 ---
 
 # Web Fonts

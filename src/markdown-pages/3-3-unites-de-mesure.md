@@ -39,9 +39,9 @@ Je ne rentre pas dans les détails de la mise en page CSS pour l’impression, m
 
 ```css
 @media print{
-	.selecteur{
-		font-size:10pt;
-	}
+  .selecteur{
+    font-size:10pt;
+  }
 }
 ```
 
@@ -79,10 +79,10 @@ On l’utilise beaucoup pour faire des largeurs de blocs qui s’adaptent à la 
 
 ```css
 .demi{
-    width:50%;
-    border:solid 1px #000;
-    min-height: 20px;
-    margin:1px;
+  width:50%;
+  border:solid 1px #000;
+  min-height: 20px;
+  margin:1px;
 }
 ```
 
@@ -90,13 +90,13 @@ avec le code HTML suivant
 
 ```html
 <div class="demi">
-	<div class="demi">
-		<div class="demi">
-			<div class="demi">
-	      <div class="demi">
-	        <div class="demi"></div>
-	      </div>
-	    </div>
+  <div class="demi">
+    <div class="demi">
+      <div class="demi">
+        <div class="demi">
+          <div class="demi"></div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -104,7 +104,7 @@ avec le code HTML suivant
 
 ![50%](images/50percent.png)
 
-## em, unité typographique relative
+## `em`, unité typographique relative
 
 ![em](images/em-wikipedia.png)
 
@@ -122,25 +122,25 @@ L’unité `em` est relative. Dans un document où les balises sont en cascade, 
 
 ```css
 .taille-en-em{
-	font-size:1.2em;
+  font-size:1.2em;
 }
 ```
 
 ```html
 <div class="taille-en-em">
-font-size:1.2em;
-	<div class="taille-en-em">
+  font-size:1.2em;
+  <div class="taille-en-em">
+    font-size:1.2em;
+    <div class="taille-en-em">
+      font-size:1.2em;
+      <div class="taille-en-em">
         font-size:1.2em;
-	            <div class="taille-en-em">
-	            font-size:1.2em;
-		                <div class="taille-en-em">
-		                font-size:1.2em;
-			                    <div class="taille-en-em">
-			                    font-size:1.2em;
-                                </div>
-                        </div>
-                </div>
-	</div>
+        <div class="taille-en-em">
+          font-size:1.2em;
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 ```
 
@@ -148,10 +148,36 @@ font-size:1.2em;
 
 Pour plus d’information vous pouvez lire [cet excellent article sur l’unité em](http://www.alsacreations.com/article/lire/563-gerer-la-taille-du-texte-avec-les-em.html)
 
+### `rem`, unité typographique relative à la racine
+
+l'unité `rem` ressemble à l'unité `em` — elle est relative également, mais non plus à son style hérité, mais à la valeur *racine* c'est à dire celle du corps du document.
+
+```css
+html,body{
+  font-size: 20px; 
+  /* taille de texte de base du document */
+}
+
+h1{
+  font-size: 2rem; 
+  /* les titres auront une taille de texte à 2x 20px = 40px */
+}
+p{
+  font-size: 1rem; 
+  line-height: 1rem;
+  margin: 1rem;
+  /* les paragraphes auront une taille de texte,
+  une hauteur de ligne, et une marge de 20px
+  */
+}
+```
+
+
+
 ## Recommandation d’usage par unité.
 
-|            |        Recommandé         |   Usage occasionnel   |   Non recommandé   |
-| :--------: | :-----------------------: | :-------------------: | :----------------: |
-|   Écran    |         em, px, %         |          ex           | pt, cm, mm, in, pc |
-| Imprimante | em, cm, mm, in, pt, pc, % |        px, ex         |                    |
+|            |           Recommandé           | Usage occasionnel |   Non recommandé   |
+| :--------: | :----------------------------: | :---------------: | :----------------: |
+|   Écran    |         rem, em, px, %         |        ex         | pt, cm, mm, in, pc |
+| Imprimante | rem, em, cm, mm, in, pt, pc, % |      px, ex       |                    |
 
