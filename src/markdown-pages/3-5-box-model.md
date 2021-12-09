@@ -1,14 +1,14 @@
 ---
 index: 3.5
 slug: "/box-model"
-date: "2021-11-25"
+date: "2021-11-26"
 title: "blocs et box model"
-next: "/"
+next: "/transition-animation"
 ---
 
 # Modèle de boîte 
 
-![box-model](images/box-model.png)
+![la boite tel qu'afficher dans les devtools](images/box-model.png)
 
 En CSS, tout élément est inclus dans une boîte ("*box*" en anglais). Comprendre le fonctionnement de ces boîtes est essentiel pour maîtriser la mise en page CSS ainsi que le positionement des éléments d'une page HTML. Dans cette leçon, nous verrons en détails le *Modèle de Boîtes CSS* - son fonctionnement ainsi que sa terminologie - pour vous permettre de réaliser des mises en pages plus complexes.
 
