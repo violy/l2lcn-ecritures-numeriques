@@ -180,7 +180,7 @@ Cette propriété définit une fonction qui décrit la façon dont les valeurs i
 Une animation doit être défini par une directive `@keyframes` et un nom. Cette directive va détailler toutes les étapes d'une animation en pourcentage de la durée de l'animation. On appliquera ensuite celle-ci via la propriété `animation` en utisant une référence au nom choisi. Il faudra mettre à minima la durée du cycle et si on veut une boucle infinie, mettre `infinite` — car par défaut l'animation ne se joue une seule fois. 
 
 ```css
-@keyframe clignotte{
+@keyframes clignotte{
   0%{
     opacity:1;
   }
